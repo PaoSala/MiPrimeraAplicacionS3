@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         val btnLogin:Button = findViewById(R.id.btn_login)
         val txMensaje:TextView = findViewById(R.id.tx_mensaje)
         var defUser = "uAdmin"
-        var defPasswd = "admin123"
+        var defPasswd = "admin1234"
 
         btnLogin.setOnClickListener {
             if(edUsername.text.toString() == defUser.toString() &&

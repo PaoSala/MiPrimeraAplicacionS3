@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
         val edUsername:EditText = findViewById(R.id.ed_username)
         val edPassw:EditText = findViewById(R.id.ed_passwd)
         val btnLogin:Button = findViewById(R.id.btn_login)
+
         val txMensaje:TextView = findViewById(R.id.tx_mensaje)
         var defUser = "uAdmin"
         var defPasswd = "admin1234"
@@ -29,7 +30,6 @@ class MainActivity : AppCompatActivity() {
                 val nuevaVentana = Intent(this, MainActivity2::class.java)
                 nuevaVentana.putExtra("par_usern", edUsername.text.toString())
                 startActivity(nuevaVentana)
-
 
 
 

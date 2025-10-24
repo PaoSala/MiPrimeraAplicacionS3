@@ -18,6 +18,7 @@ class MainActivity2 : AppCompatActivity() {
         val txUsuario:TextView =findViewById(R.id.id_usuario_loggeado)
         val recibirUsernameS = intent.getStringExtra("par_usern")
         val btnMenReg : Button = findViewById(R.id.btn_men_Reg_Com)
+        val btnGoCam : Button = findViewById(R.id.btn_go_cam)
         val btnGoCalculadora : Button = findViewById(R.id.btn_calculadora)
         val btnMenu:Button = findViewById(R.id.btn_menuprincipal)
         txUsuario.text = recibirUsernameS.toString()
@@ -32,6 +33,10 @@ class MainActivity2 : AppCompatActivity() {
         btnMenReg.setOnClickListener {
             val nuevaVentana4 = Intent(this, MainActivity5::class.java)
             startActivity(nuevaVentana4)
+        }
+        btnGoCam.setOnClickListener {
+            val nuevaVentana5 = Intent(this, MainActivity7::class.java)
+            startActivity(nuevaVentana5)
         }
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())

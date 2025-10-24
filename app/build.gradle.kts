@@ -58,4 +58,11 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.0")
     // Adaptadores de Moshi para Kotlin (null-safety, data classes, KotlinJsonAdapterFactory)
     implementation("com.squareup.moshi:moshi-kotlin:1.15.1")
+
+
+    //dependencias nuevas camara
+    implementation("androidx.camera:camera-core:1.3.4")
+    implementation("androidx.camera:camera-camera2:1.3.4")
+    implementation("androidx.camera:camera-lifecycle:1.3.4")
+    implementation("androidx.camera:camera-view:1.3.4")
 }

@@ -29,9 +29,9 @@ class MainActivity7 : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main7)
 
-        val btnTomarFoto : Button = findViewById(R.id.btn_tomarfoto)
-        val btnCargarFoto : Button = findViewById(R.id.btn_cargarfoto)
-        val contenedorFoto  : ImageView = findViewById(R.id.imageView)
+        btnTomarFoto  = findViewById(R.id.btn_tomarfoto)
+        btnCargarFoto = findViewById(R.id.btn_cargarfoto)
+        contenedorFoto   = findViewById(R.id.imageView)
         previewView  = findViewById(R.id.previewView)
 
         btnTomarFoto.isEnabled = false
@@ -54,6 +54,7 @@ class MainActivity7 : AppCompatActivity() {
                 if (bitmap != null) {
                     contenedorFoto.setImageBitmap(bitmap)
                     val base64 = CamaraUtils.convertirDeBitMapABase64(bitmap)
+                    println(base64)
                     Log.d("BASE64", base64.take(100) + "...")
                     Toast.makeText(this, "Foto capturada", Toast.LENGTH_SHORT).show()
 
